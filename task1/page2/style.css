@@ -1,0 +1,109 @@
+html{
+    width: 980px;
+    margin: auto;
+    font-family: cursive;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1.5px solid;
+    padding: 10px;
+}
+
+ header div {
+    margin: 5px;
+}
+
+.logo{
+    margin-left: auto;
+    
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.info img{
+    height: 70px;
+    width: 40px;
+    margin:15px;
+}
+
+.caption{
+    padding-top: 10px;
+    font-size: larger;
+}
+.card{
+    border:1.5px solid;
+    padding: 10px;
+    margin: 10px;
+}
+.title{
+    font-size: larger;
+    align-self: center;
+}
+.rating{
+    align-self: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border:1.5px solid;
+    border-top:none;
+    text-align: center;
+    margin:0 5% 0 5%;
+}
+
+
+.sort{
+    padding: 5px;
+    margin-left:auto ;
+}
+.sort a{
+    padding: 5px;
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 125px;
+	margin: 0 0 0 0;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 25px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 25px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
